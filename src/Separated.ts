@@ -14,6 +14,7 @@
 import { pipe } from './function.ts'
 import { flap as flap_, Functor2 } from './Functor.ts'
 import { Bifunctor2 } from './Bifunctor.ts'
+import {} from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model

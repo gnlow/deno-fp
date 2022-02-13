@@ -15,6 +15,7 @@ import { constant, constTrue, pipe } from './function.ts'
 import { Monoid } from './Monoid.ts'
 import { Ordering } from './Ordering.ts'
 import { Semigroup } from './Semigroup.ts'
+import {} from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model

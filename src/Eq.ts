@@ -14,6 +14,7 @@ import { pipe } from './function.ts'
 import { Monoid } from './Monoid.ts'
 import { ReadonlyRecord } from './ReadonlyRecord.ts'
 import { Semigroup } from './Semigroup.ts'
+import {} from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model

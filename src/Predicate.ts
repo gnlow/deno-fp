@@ -5,6 +5,7 @@ import { Contravariant1 } from './Contravariant.ts'
 import { constFalse, constTrue, flow, pipe } from './function.ts'
 import { Monoid } from './Monoid.ts'
 import { Semigroup } from './Semigroup.ts'
+import {} from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model
