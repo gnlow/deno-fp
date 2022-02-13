@@ -3,16 +3,16 @@
  *
  * @since 2.11.0
  */
-import { flow } from './function'
-import { HKT2, Kind2, Kind3, Kind4, URIS2, URIS3, URIS4 } from './HKT'
+import { flow } from './function.ts'
+import { HKT2, Kind2, Kind3, Kind4, URIS2, URIS3, URIS4 } from './HKT.ts'
 import {
   NaturalTransformation22,
   NaturalTransformation22C,
   NaturalTransformation23,
   NaturalTransformation23C,
   NaturalTransformation24
-} from './NaturalTransformation'
-import { These, URI } from './These'
+} from './NaturalTransformation.ts'
+import { These, URI } from './These.ts'
 
 // -------------------------------------------------------------------------------------
 // model

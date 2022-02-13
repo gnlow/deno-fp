@@ -14,7 +14,7 @@
  *
  * @since 2.0.0
  */
-import { Alt, Alt1, Alt2, Alt2C, Alt3, Alt3C, Alt4, altAll as altAll_ } from './Alt'
+import { Alt, Alt1, Alt2, Alt2C, Alt3, Alt3C, Alt4, altAll as altAll_ } from './Alt.ts'
 import {
   Applicative,
   Applicative1,
@@ -23,9 +23,9 @@ import {
   Applicative3,
   Applicative3C,
   Applicative4
-} from './Applicative'
-import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
-import { Zero, Zero1, Zero2, Zero2C, Zero3, Zero3C, Zero4 } from './Zero'
+} from './Applicative.ts'
+import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
+import { Zero, Zero1, Zero2, Zero2C, Zero3, Zero3C, Zero4 } from './Zero.ts'
 
 // -------------------------------------------------------------------------------------
 // model

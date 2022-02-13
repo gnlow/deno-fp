@@ -11,8 +11,8 @@
  *
  * @since 2.0.0
  */
-import { pipe } from './function'
-import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
+import { pipe } from './function.ts'
+import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model

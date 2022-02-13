@@ -3,16 +3,16 @@
  *
  * @since 2.11.0
  */
-import { Chain, Chain2, Chain3, Chain3C, Chain4, chainFirst } from './Chain'
-import { flow } from './function'
-import { HKT2, Kind2, Kind3, Kind4, URIS2, URIS3, URIS4 } from './HKT'
+import { Chain, Chain2, Chain3, Chain3C, Chain4, chainFirst } from './Chain.ts'
+import { flow } from './function.ts'
+import { HKT2, Kind2, Kind3, Kind4, URIS2, URIS3, URIS4 } from './HKT.ts'
 import {
   NaturalTransformation22,
   NaturalTransformation23R,
   NaturalTransformation23RC,
   NaturalTransformation24R
-} from './NaturalTransformation'
-import * as R from './Reader'
+} from './NaturalTransformation.ts'
+import * as R from './Reader.ts'
 
 import Reader = R.Reader
 

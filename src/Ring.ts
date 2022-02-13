@@ -9,8 +9,8 @@
  *
  * @since 2.0.0
  */
-import { getRing } from './function'
-import { Semiring } from './Semiring'
+import { getRing } from './function.ts'
+import { Semiring } from './Semiring.ts'
 
 // -------------------------------------------------------------------------------------
 // model

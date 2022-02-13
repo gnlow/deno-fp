@@ -1,11 +1,11 @@
 /**
  * @since 2.0.0
  */
-import { BooleanAlgebra } from './BooleanAlgebra'
-import { Monoid } from './Monoid'
-import { Ring } from './Ring'
-import { Semigroup } from './Semigroup'
-import { Semiring } from './Semiring'
+import { BooleanAlgebra } from './BooleanAlgebra.ts'
+import { Monoid } from './Monoid.ts'
+import { Ring } from './Ring.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Semiring } from './Semiring.ts'
 
 // -------------------------------------------------------------------------------------
 // instances

@@ -12,33 +12,33 @@
  *
  * @since 2.5.0
  */
-import { Alt1 } from './Alt'
-import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative'
-import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { Comonad1 } from './Comonad'
-import { Endomorphism } from './Endomorphism'
-import { Eq, fromEquals } from './Eq'
-import { Extend1 } from './Extend'
-import { Foldable1 } from './Foldable'
-import { FoldableWithIndex1 } from './FoldableWithIndex'
-import { identity, Lazy, pipe, SK } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor'
-import { FunctorWithIndex1 } from './FunctorWithIndex'
-import { HKT } from './HKT'
-import * as _ from './internal'
-import { Monad1 } from './Monad'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Option } from './Option'
-import { getMonoid, Ord } from './Ord'
-import { Pointed1 } from './Pointed'
-import { Predicate } from './Predicate'
-import { ReadonlyRecord } from './ReadonlyRecord'
-import { Refinement } from './Refinement'
-import * as Se from './Semigroup'
-import { Show } from './Show'
-import { PipeableTraverse1, Traversable1 } from './Traversable'
-import { PipeableTraverseWithIndex1, TraversableWithIndex1 } from './TraversableWithIndex'
+import { Alt1 } from './Alt.ts'
+import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { Comonad1 } from './Comonad.ts'
+import { Endomorphism } from './Endomorphism.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { Extend1 } from './Extend.ts'
+import { Foldable1 } from './Foldable.ts'
+import { FoldableWithIndex1 } from './FoldableWithIndex.ts'
+import { identity, Lazy, pipe, SK } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor.ts'
+import { FunctorWithIndex1 } from './FunctorWithIndex.ts'
+import { HKT } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Monad1 } from './Monad.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Option } from './Option.ts'
+import { getMonoid, Ord } from './Ord.ts'
+import { Pointed1 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import { ReadonlyRecord } from './ReadonlyRecord.ts'
+import { Refinement } from './Refinement.ts'
+import * as Se from './Semigroup.ts'
+import { Show } from './Show.ts'
+import { PipeableTraverse1, Traversable1 } from './Traversable.ts'
+import { PipeableTraverseWithIndex1, TraversableWithIndex1 } from './TraversableWithIndex.ts'
 
 import Semigroup = Se.Semigroup
 
@@ -889,7 +889,7 @@ export const URI = 'ReadonlyNonEmptyArray'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: ReadonlyNonEmptyArray<A>
   }

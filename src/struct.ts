@@ -1,8 +1,8 @@
 /**
  * @since 2.10.0
  */
-import * as _ from './internal'
-import { Semigroup } from './Semigroup'
+import * as _ from './internal.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // instances

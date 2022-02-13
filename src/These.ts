@@ -19,30 +19,30 @@
  *
  * @since 2.0.0
  */
-import { Applicative, Applicative2C } from './Applicative'
-import { Apply2C } from './Apply'
-import { Bifunctor2 } from './Bifunctor'
-import { Chain2C } from './Chain'
-import { Either, Left, Right } from './Either'
-import { Eq, fromEquals } from './Eq'
-import { Foldable2 } from './Foldable'
-import { FromEither2, fromOption as fromOption_, fromOptionK as fromOptionK_ } from './FromEither'
-import { FromThese2 } from './FromThese'
-import { identity, Lazy, pipe } from './function'
-import { flap as flap_, Functor2 } from './Functor'
-import { HKT } from './HKT'
-import * as _ from './internal'
-import { Monad2C } from './Monad'
-import { MonadThrow2C } from './MonadThrow'
-import { Monoid } from './Monoid'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Option } from './Option'
-import { Pointed2 } from './Pointed'
-import { Predicate } from './Predicate'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Semigroup } from './Semigroup'
-import { Show } from './Show'
-import { PipeableTraverse2, Traversable2 } from './Traversable'
+import { Applicative, Applicative2C } from './Applicative.ts'
+import { Apply2C } from './Apply.ts'
+import { Bifunctor2 } from './Bifunctor.ts'
+import { Chain2C } from './Chain.ts'
+import { Either, Left, Right } from './Either.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { Foldable2 } from './Foldable.ts'
+import { FromEither2, fromOption as fromOption_, fromOptionK as fromOptionK_ } from './FromEither.ts'
+import { FromThese2 } from './FromThese.ts'
+import { identity, Lazy, pipe } from './function.ts'
+import { flap as flap_, Functor2 } from './Functor.ts'
+import { HKT } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Monad2C } from './Monad.ts'
+import { MonadThrow2C } from './MonadThrow.ts'
+import { Monoid } from './Monoid.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Option } from './Option.ts'
+import { Pointed2 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Show } from './Show.ts'
+import { PipeableTraverse2, Traversable2 } from './Traversable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -565,7 +565,7 @@ export const URI = 'These'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: These<E, A>
   }

@@ -37,11 +37,11 @@
  *
  * @since 2.0.0
  */
-import { getSemigroup, identity } from './function'
-import * as _ from './internal'
-import * as M from './Magma'
-import * as Or from './Ord'
-import { ReadonlyRecord } from './ReadonlyRecord'
+import { getSemigroup, identity } from './function.ts'
+import * as _ from './internal.ts'
+import * as M from './Magma.ts'
+import * as Or from './Ord.ts'
+import { ReadonlyRecord } from './ReadonlyRecord.ts'
 
 import Ord = Or.Ord
 import Magma = M.Magma

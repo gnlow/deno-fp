@@ -1,24 +1,24 @@
 /**
  * @since 2.0.0
  */
-import { Alt1 } from './Alt'
-import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative'
-import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { ChainRec1, tailRec } from './ChainRec'
-import { Comonad1 } from './Comonad'
-import { Eq } from './Eq'
-import { Extend1 } from './Extend'
-import { Foldable1 } from './Foldable'
-import { identity as id, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor'
-import { HKT } from './HKT'
-import * as _ from './internal'
-import { Monad1 } from './Monad'
-import { Monoid } from './Monoid'
-import { Pointed1 } from './Pointed'
-import { Show } from './Show'
-import { PipeableTraverse1, Traversable1 } from './Traversable'
+import { Alt1 } from './Alt.ts'
+import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { ChainRec1, tailRec } from './ChainRec.ts'
+import { Comonad1 } from './Comonad.ts'
+import { Eq } from './Eq.ts'
+import { Extend1 } from './Extend.ts'
+import { Foldable1 } from './Foldable.ts'
+import { identity as id, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor.ts'
+import { HKT } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Monad1 } from './Monad.ts'
+import { Monoid } from './Monoid.ts'
+import { Pointed1 } from './Pointed.ts'
+import { Show } from './Show.ts'
+import { PipeableTraverse1, Traversable1 } from './Traversable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -190,7 +190,7 @@ export const URI = 'Identity'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Identity<A>
   }

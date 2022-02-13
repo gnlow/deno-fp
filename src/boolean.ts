@@ -1,14 +1,14 @@
 /**
  * @since 2.2.0
  */
-import * as BA from './BooleanAlgebra'
-import * as E from './Eq'
-import { Lazy } from './function'
-import { Monoid } from './Monoid'
-import * as O from './Ord'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import * as S from './Show'
+import * as BA from './BooleanAlgebra.ts'
+import * as E from './Eq.ts'
+import { Lazy } from './function.ts'
+import { Monoid } from './Monoid.ts'
+import * as O from './Ord.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import * as S from './Show.ts'
 
 // -------------------------------------------------------------------------------------
 // refinements

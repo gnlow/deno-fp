@@ -1,16 +1,16 @@
 /**
  * @since 2.3.0
  */
-import { Applicative2, getApplicativeMonoid } from './Applicative'
+import { Applicative2, getApplicativeMonoid } from './Applicative.ts'
 import {
   apFirst as apFirst_,
   Apply2,
   apS as apS_,
   apSecond as apSecond_,
   getApplySemigroup as getApplySemigroup_
-} from './Apply'
-import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO2, fromIOK as fromIOK_ } from './FromIO'
+} from './Apply.ts'
+import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO2, fromIOK as fromIOK_ } from './FromIO.ts'
 import {
   ask as ask_,
   asks as asks_,
@@ -18,26 +18,26 @@ import {
   chainReaderK as chainReaderK_,
   FromReader2,
   fromReaderK as fromReaderK_
-} from './FromReader'
+} from './FromReader.ts'
 import {
   chainFirstTaskK as chainFirstTaskK_,
   chainTaskK as chainTaskK_,
   FromTask2,
   fromTaskK as fromTaskK_
-} from './FromTask'
-import { flow, identity, pipe, SK } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor'
-import * as _ from './internal'
-import { Monad2 } from './Monad'
-import { MonadIO2 } from './MonadIO'
-import { MonadTask2 } from './MonadTask'
-import { Monoid } from './Monoid'
-import { Pointed2 } from './Pointed'
-import * as R from './Reader'
-import * as RT from './ReaderT'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Semigroup } from './Semigroup'
-import * as T from './Task'
+} from './FromTask.ts'
+import { flow, identity, pipe, SK } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { Monad2 } from './Monad.ts'
+import { MonadIO2 } from './MonadIO.ts'
+import { MonadTask2 } from './MonadTask.ts'
+import { Monoid } from './Monoid.ts'
+import { Pointed2 } from './Pointed.ts'
+import * as R from './Reader.ts'
+import * as RT from './ReaderT.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Semigroup } from './Semigroup.ts'
+import * as T from './Task.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -216,7 +216,7 @@ export const URI = 'ReaderTask'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: ReaderTask<E, A>
   }

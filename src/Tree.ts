@@ -7,24 +7,24 @@
  *
  * @since 2.0.0
  */
-import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative'
-import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply'
-import * as A from './Array'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { Comonad1 } from './Comonad'
-import { Eq, fromEquals } from './Eq'
-import { Extend1 } from './Extend'
-import { Foldable1 } from './Foldable'
-import { identity, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor'
-import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
-import * as _ from './internal'
-import { Monad as MonadHKT, Monad1, Monad2, Monad2C, Monad3, Monad3C, Monad4 } from './Monad'
-import { Monoid } from './Monoid'
-import { Pointed1 } from './Pointed'
-import { Predicate } from './Predicate'
-import { Show } from './Show'
-import { PipeableTraverse1, Traversable1 } from './Traversable'
+import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import * as A from './Array.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { Comonad1 } from './Comonad.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { Extend1 } from './Extend.ts'
+import { Foldable1 } from './Foldable.ts'
+import { identity, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor.ts'
+import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Monad as MonadHKT, Monad1, Monad2, Monad2C, Monad3, Monad3C, Monad4 } from './Monad.ts'
+import { Monoid } from './Monoid.ts'
+import { Pointed1 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import { Show } from './Show.ts'
+import { PipeableTraverse1, Traversable1 } from './Traversable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -436,7 +436,7 @@ export const URI = 'Tree'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Tree<A>
   }

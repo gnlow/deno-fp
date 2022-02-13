@@ -1,32 +1,32 @@
 /**
  * @since 2.5.0
  */
-import { Applicative } from './Applicative'
-import { Compactable2 } from './Compactable'
-import { Either } from './Either'
-import { Eq, fromEquals } from './Eq'
-import { Filterable2 } from './Filterable'
-import { FilterableWithIndex2C } from './FilterableWithIndex'
-import { Foldable, Foldable1, Foldable2, Foldable2C, Foldable3 } from './Foldable'
-import { FoldableWithIndex2C } from './FoldableWithIndex'
-import { pipe, SK } from './function'
-import { flap as flap_, Functor2 } from './Functor'
-import { FunctorWithIndex2C } from './FunctorWithIndex'
-import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from './HKT'
-import * as _ from './internal'
-import { Magma } from './Magma'
-import { Monoid } from './Monoid'
-import * as O from './Option'
-import { Ord } from './Ord'
-import { Predicate } from './Predicate'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import { Separated, separated } from './Separated'
-import { Show } from './Show'
-import { Traversable2C } from './Traversable'
-import { TraversableWithIndex2C } from './TraversableWithIndex'
-import { Unfoldable, Unfoldable1 } from './Unfoldable'
-import { wiltDefault, Witherable2C, witherDefault } from './Witherable'
+import { Applicative } from './Applicative.ts'
+import { Compactable2 } from './Compactable.ts'
+import { Either } from './Either.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { Filterable2 } from './Filterable.ts'
+import { FilterableWithIndex2C } from './FilterableWithIndex.ts'
+import { Foldable, Foldable1, Foldable2, Foldable2C, Foldable3 } from './Foldable.ts'
+import { FoldableWithIndex2C } from './FoldableWithIndex.ts'
+import { pipe, SK } from './function.ts'
+import { flap as flap_, Functor2 } from './Functor.ts'
+import { FunctorWithIndex2C } from './FunctorWithIndex.ts'
+import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Magma } from './Magma.ts'
+import { Monoid } from './Monoid.ts'
+import * as O from './Option.ts'
+import { Ord } from './Ord.ts'
+import { Predicate } from './Predicate.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Separated, separated } from './Separated.ts'
+import { Show } from './Show.ts'
+import { Traversable2C } from './Traversable.ts'
+import { TraversableWithIndex2C } from './TraversableWithIndex.ts'
+import { Unfoldable, Unfoldable1 } from './Unfoldable.ts'
+import { wiltDefault, Witherable2C, witherDefault } from './Witherable.ts'
 
 import Option = O.Option
 
@@ -755,7 +755,7 @@ export const URI = 'ReadonlyMap'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: ReadonlyMap<E, A>
   }

@@ -1,13 +1,13 @@
 /**
  * @since 2.10.0
  */
-import * as E from './Eq'
-import * as M from './Monoid'
-import * as S from './Semigroup'
-import * as O from './Ord'
-import * as Sh from './Show'
-import { Refinement } from './Refinement'
-import { ReadonlyNonEmptyArray, isNonEmpty } from './ReadonlyNonEmptyArray'
+import * as E from './Eq.ts'
+import * as M from './Monoid.ts'
+import * as S from './Semigroup.ts'
+import * as O from './Ord.ts'
+import * as Sh from './Show.ts'
+import { Refinement } from './Refinement.ts'
+import { ReadonlyNonEmptyArray, isNonEmpty } from './ReadonlyNonEmptyArray.ts'
 
 // -------------------------------------------------------------------------------------
 // instances

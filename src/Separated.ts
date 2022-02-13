@@ -11,9 +11,9 @@
  * @since 2.10.0
  */
 
-import { pipe } from './function'
-import { flap as flap_, Functor2 } from './Functor'
-import { Bifunctor2 } from './Bifunctor'
+import { pipe } from './function.ts'
+import { flap as flap_, Functor2 } from './Functor.ts'
+import { Bifunctor2 } from './Bifunctor.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -96,7 +96,7 @@ export const URI = 'Separated'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: Separated<E, A>
   }

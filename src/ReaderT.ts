@@ -1,12 +1,12 @@
 /**
  * @since 2.0.0
  */
-import { Apply, Apply1, Apply2, Apply2C, Apply3, Apply3C, Apply4 } from './Apply'
-import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4 } from './Chain'
-import { flow, pipe } from './function'
-import { Functor, Functor1, Functor2, Functor2C, Functor3, Functor3C, Functor4 } from './Functor'
-import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
-import { Monad, Monad1, Monad2, Monad2C, Monad3 } from './Monad'
+import { Apply, Apply1, Apply2, Apply2C, Apply3, Apply3C, Apply4 } from './Apply.ts'
+import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4 } from './Chain.ts'
+import { flow, pipe } from './function.ts'
+import { Functor, Functor1, Functor2, Functor2C, Functor3, Functor3C, Functor4 } from './Functor.ts'
+import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
+import { Monad, Monad1, Monad2, Monad2C, Monad3 } from './Monad.ts'
 import {
   NaturalTransformation22,
   NaturalTransformation12,
@@ -14,9 +14,9 @@ import {
   NaturalTransformation,
   NaturalTransformation23R,
   NaturalTransformation24S
-} from './NaturalTransformation'
-import { Pointed, Pointed1, Pointed2, Pointed2C, Pointed3, Pointed3C, Pointed4 } from './Pointed'
-import { Reader } from './Reader'
+} from './NaturalTransformation.ts'
+import { Pointed, Pointed1, Pointed2, Pointed2C, Pointed3, Pointed3C, Pointed4 } from './Pointed.ts'
+import { Reader } from './Reader.ts'
 
 /**
  * @since 2.10.0

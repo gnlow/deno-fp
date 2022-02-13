@@ -3,10 +3,10 @@
  *
  * @since 2.10.0
  */
-import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4, chainFirst } from './Chain'
-import { flow } from './function'
-import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
-import { IO, URI } from './IO'
+import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4, chainFirst } from './Chain.ts'
+import { flow } from './function.ts'
+import { HKT, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
+import { IO, URI } from './IO.ts'
 import {
   NaturalTransformation11,
   NaturalTransformation12,
@@ -14,7 +14,7 @@ import {
   NaturalTransformation13,
   NaturalTransformation13C,
   NaturalTransformation14
-} from './NaturalTransformation'
+} from './NaturalTransformation.ts'
 
 // -------------------------------------------------------------------------------------
 // model

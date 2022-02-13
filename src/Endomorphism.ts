@@ -2,9 +2,9 @@
  * @since 2.11.0
  */
 
-import { flow, identity } from './function'
-import { Monoid } from './Monoid'
-import { Semigroup } from './Semigroup'
+import { flow, identity } from './function.ts'
+import { Monoid } from './Monoid.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -37,7 +37,7 @@ export const URI = 'Endomorphism'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Endomorphism<A>
   }

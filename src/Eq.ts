@@ -9,11 +9,11 @@
  *
  * @since 2.0.0
  */
-import { Contravariant1 } from './Contravariant'
-import { pipe } from './function'
-import { Monoid } from './Monoid'
-import { ReadonlyRecord } from './ReadonlyRecord'
-import { Semigroup } from './Semigroup'
+import { Contravariant1 } from './Contravariant.ts'
+import { pipe } from './function.ts'
+import { Monoid } from './Monoid.ts'
+import { ReadonlyRecord } from './ReadonlyRecord.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -112,7 +112,7 @@ export const URI = 'Eq'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Eq<A>
   }

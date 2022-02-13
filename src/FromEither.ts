@@ -4,11 +4,11 @@
  * @since 2.10.0
  */
 
-import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4 } from './Chain'
-import { Either, URI as EURI } from './Either'
-import { flow, Lazy } from './function'
-import { HKT2, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
-import * as _ from './internal'
+import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4 } from './Chain.ts'
+import { Either, URI as EURI } from './Either.ts'
+import { flow, Lazy } from './function.ts'
+import { HKT2, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
+import * as _ from './internal.ts'
 import {
   NaturalTransformation12C,
   NaturalTransformation13C,
@@ -19,10 +19,10 @@ import {
   NaturalTransformation23,
   NaturalTransformation23C,
   NaturalTransformation24
-} from './NaturalTransformation'
-import { Option, URI as OURI } from './Option'
-import { Predicate } from './Predicate'
-import { Refinement } from './Refinement'
+} from './NaturalTransformation.ts'
+import { Option, URI as OURI } from './Option.ts'
+import { Predicate } from './Predicate.ts'
+import { Refinement } from './Refinement.ts'
 
 // -------------------------------------------------------------------------------------
 // model

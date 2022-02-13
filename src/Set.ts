@@ -1,19 +1,19 @@
 /**
  * @since 2.0.0
  */
-import { Either } from './Either'
-import { Eq } from './Eq'
-import { identity } from './function'
-import { Magma } from './Magma'
-import { Monoid } from './Monoid'
-import { Option } from './Option'
-import { Ord } from './Ord'
-import { Predicate } from './Predicate'
-import * as RS from './ReadonlySet'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import { separated, Separated } from './Separated'
-import { Show } from './Show'
+import { Either } from './Either.ts'
+import { Eq } from './Eq.ts'
+import { identity } from './function.ts'
+import { Magma } from './Magma.ts'
+import { Monoid } from './Monoid.ts'
+import { Option } from './Option.ts'
+import { Ord } from './Ord.ts'
+import { Predicate } from './Predicate.ts'
+import * as RS from './ReadonlySet.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import { separated, Separated } from './Separated.ts'
+import { Show } from './Show.ts'
 
 /**
  * @category instances

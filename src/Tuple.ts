@@ -1,24 +1,24 @@
 /**
  * @since 2.0.0
  */
-import { Applicative, Applicative2C } from './Applicative'
-import { Apply2C } from './Apply'
-import { Bifunctor2 } from './Bifunctor'
-import { Chain2C } from './Chain'
-import { ChainRec2C } from './ChainRec'
-import { Comonad2 } from './Comonad'
-import { Foldable2 } from './Foldable'
-import { Monad2C } from './Monad'
-import { Monoid } from './Monoid'
-import * as RT from './ReadonlyTuple'
-import { Semigroup } from './Semigroup'
-import { Semigroupoid2 } from './Semigroupoid'
-import { Traversable2, PipeableTraverse2 } from './Traversable'
-import { flap as flap_, Functor2 } from './Functor'
-import { Extend2 } from './Extend'
-import { Either } from './Either'
-import { identity, pipe } from './function'
-import { HKT } from './HKT'
+import { Applicative, Applicative2C } from './Applicative.ts'
+import { Apply2C } from './Apply.ts'
+import { Bifunctor2 } from './Bifunctor.ts'
+import { Chain2C } from './Chain.ts'
+import { ChainRec2C } from './ChainRec.ts'
+import { Comonad2 } from './Comonad.ts'
+import { Foldable2 } from './Foldable.ts'
+import { Monad2C } from './Monad.ts'
+import { Monoid } from './Monoid.ts'
+import * as RT from './ReadonlyTuple.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Semigroupoid2 } from './Semigroupoid.ts'
+import { Traversable2, PipeableTraverse2 } from './Traversable.ts'
+import { flap as flap_, Functor2 } from './Functor.ts'
+import { Extend2 } from './Extend.ts'
+import { Either } from './Either.ts'
+import { identity, pipe } from './function.ts'
+import { HKT } from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -279,7 +279,7 @@ export const URI = 'Tuple'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: [A, E]
   }

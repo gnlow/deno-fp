@@ -1,8 +1,8 @@
 /**
  * @since 2.0.0
  */
-import { Alt3, Alt3C } from './Alt'
-import { Applicative3, Applicative3C, getApplicativeMonoid } from './Applicative'
+import { Alt3, Alt3C } from './Alt.ts'
+import { Applicative3, Applicative3C, getApplicativeMonoid } from './Applicative.ts'
 import {
   ap as ap_,
   apFirst as apFirst_,
@@ -11,19 +11,19 @@ import {
   apS as apS_,
   apSecond as apSecond_,
   getApplySemigroup as getApplySemigroup_
-} from './Apply'
-import { Bifunctor3 } from './Bifunctor'
-import { bind as bind_, Chain3, chainFirst as chainFirst_ } from './Chain'
-import { compact as compact_, Compactable3C, separate as separate_ } from './Compactable'
-import * as E from './Either'
-import * as ET from './EitherT'
+} from './Apply.ts'
+import { Bifunctor3 } from './Bifunctor.ts'
+import { bind as bind_, Chain3, chainFirst as chainFirst_ } from './Chain.ts'
+import { compact as compact_, Compactable3C, separate as separate_ } from './Compactable.ts'
+import * as E from './Either.ts'
+import * as ET from './EitherT.ts'
 import {
   filter as filter_,
   Filterable3C,
   filterMap as filterMap_,
   partition as partition_,
   partitionMap as partitionMap_
-} from './Filterable'
+} from './Filterable.ts'
 import {
   chainEitherK as chainEitherK_,
   chainOptionK as chainOptionK_,
@@ -33,8 +33,8 @@ import {
   fromOption as fromOption_,
   fromOptionK as fromOptionK_,
   fromPredicate as fromPredicate_
-} from './FromEither'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO3, fromIOK as fromIOK_ } from './FromIO'
+} from './FromEither.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO3, fromIOK as fromIOK_ } from './FromIO.ts'
 import {
   ask as ask_,
   asks as asks_,
@@ -42,35 +42,35 @@ import {
   chainReaderK as chainReaderK_,
   FromReader3,
   fromReaderK as fromReaderK_
-} from './FromReader'
+} from './FromReader.ts'
 import {
   chainFirstTaskK as chainFirstTaskK_,
   chainTaskK as chainTaskK_,
   FromTask3,
   fromTaskK as fromTaskK_
-} from './FromTask'
-import { flow, identity, Lazy, pipe, SK } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor3 } from './Functor'
-import * as _ from './internal'
-import { IO } from './IO'
-import { IOEither, URI as IEURI } from './IOEither'
-import { Monad3, Monad3C } from './Monad'
-import { MonadIO3 } from './MonadIO'
-import { MonadTask3, MonadTask3C } from './MonadTask'
-import { MonadThrow3, MonadThrow3C } from './MonadThrow'
-import { Monoid } from './Monoid'
-import { NaturalTransformation13C, NaturalTransformation23, NaturalTransformation33 } from './NaturalTransformation'
-import { URI as OURI } from './Option'
-import { Pointed3 } from './Pointed'
-import { Predicate } from './Predicate'
-import * as R from './Reader'
-import { ReaderEither, URI as REURI } from './ReaderEither'
-import * as RT from './ReaderTask'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import * as T from './Task'
-import * as TE from './TaskEither'
+} from './FromTask.ts'
+import { flow, identity, Lazy, pipe, SK } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor3 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { IO } from './IO.ts'
+import { IOEither, URI as IEURI } from './IOEither.ts'
+import { Monad3, Monad3C } from './Monad.ts'
+import { MonadIO3 } from './MonadIO.ts'
+import { MonadTask3, MonadTask3C } from './MonadTask.ts'
+import { MonadThrow3, MonadThrow3C } from './MonadThrow.ts'
+import { Monoid } from './Monoid.ts'
+import { NaturalTransformation13C, NaturalTransformation23, NaturalTransformation33 } from './NaturalTransformation.ts'
+import { URI as OURI } from './Option.ts'
+import { Pointed3 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import * as R from './Reader.ts'
+import { ReaderEither, URI as REURI } from './ReaderEither.ts'
+import * as RT from './ReaderTask.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import * as T from './Task.ts'
+import * as TE from './TaskEither.ts'
 
 import Either = E.Either
 import Task = T.Task
@@ -700,7 +700,7 @@ export const URI = 'ReaderTaskEither'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind3<R, E, A> {
     readonly [URI]: ReaderTaskEither<R, E, A>
   }

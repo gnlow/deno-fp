@@ -1,10 +1,10 @@
 /**
  * @since 2.11.0
  */
-import { Contravariant1 } from './Contravariant'
-import { constFalse, constTrue, flow, pipe } from './function'
-import { Monoid } from './Monoid'
-import { Semigroup } from './Semigroup'
+import { Contravariant1 } from './Contravariant.ts'
+import { constFalse, constTrue, flow, pipe } from './function.ts'
+import { Monoid } from './Monoid.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -45,7 +45,7 @@ export const URI = 'Predicate'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Predicate<A>
   }

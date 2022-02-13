@@ -9,12 +9,12 @@
  *
  * @since 2.0.0
  */
-import { Contravariant1 } from './Contravariant'
-import { Eq, eqStrict } from './Eq'
-import { constant, constTrue, pipe } from './function'
-import { Monoid } from './Monoid'
-import { Ordering } from './Ordering'
-import { Semigroup } from './Semigroup'
+import { Contravariant1 } from './Contravariant.ts'
+import { Eq, eqStrict } from './Eq.ts'
+import { constant, constTrue, pipe } from './function.ts'
+import { Monoid } from './Monoid.ts'
+import { Ordering } from './Ordering.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -125,7 +125,7 @@ export const URI = 'Ord'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Ord<A>
   }

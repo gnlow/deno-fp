@@ -1,15 +1,15 @@
 /**
  * @since 2.4.0
  */
-import { ap as ap_, Apply, Apply1, Apply2, Apply2C, Apply3, Apply3C } from './Apply'
-import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C } from './Chain'
-import { flow, Lazy, pipe } from './function'
-import { Functor, Functor1, Functor2, Functor2C, Functor3, Functor3C, map as map_ } from './Functor'
-import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from './HKT'
-import { Monad, Monad1, Monad2, Monad2C, Monad3, Monad3C } from './Monad'
-import { Pointed, Pointed1, Pointed2, Pointed2C, Pointed3, Pointed3C } from './Pointed'
-import { Semigroup } from './Semigroup'
-import * as T from './These'
+import { ap as ap_, Apply, Apply1, Apply2, Apply2C, Apply3, Apply3C } from './Apply.ts'
+import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C } from './Chain.ts'
+import { flow, Lazy, pipe } from './function.ts'
+import { Functor, Functor1, Functor2, Functor2C, Functor3, Functor3C, map as map_ } from './Functor.ts'
+import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from './HKT.ts'
+import { Monad, Monad1, Monad2, Monad2C, Monad3, Monad3C } from './Monad.ts'
+import { Pointed, Pointed1, Pointed2, Pointed2C, Pointed3, Pointed3C } from './Pointed.ts'
+import { Semigroup } from './Semigroup.ts'
+import * as T from './These.ts'
 
 import These = T.These
 

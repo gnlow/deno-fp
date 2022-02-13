@@ -1,44 +1,44 @@
 /**
  * @since 2.5.0
  */
-import { Alt1 } from './Alt'
-import { Alternative1 } from './Alternative'
-import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative'
-import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { ChainRec1 } from './ChainRec'
-import { Compactable1 } from './Compactable'
-import { Either } from './Either'
-import { Eq, fromEquals } from './Eq'
-import { Extend1 } from './Extend'
-import { Filterable1 } from './Filterable'
-import { FilterableWithIndex1, PredicateWithIndex, RefinementWithIndex } from './FilterableWithIndex'
-import { Foldable1 } from './Foldable'
-import { FoldableWithIndex1 } from './FoldableWithIndex'
-import { FromEither1, fromEitherK as fromEitherK_ } from './FromEither'
-import { identity, Lazy, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor'
-import { FunctorWithIndex1 } from './FunctorWithIndex'
-import { HKT } from './HKT'
-import * as _ from './internal'
-import { Magma } from './Magma'
-import { Monad1 } from './Monad'
-import { Monoid } from './Monoid'
-import { NaturalTransformation11 } from './NaturalTransformation'
-import { NonEmptyArray } from './NonEmptyArray'
-import * as N from './number'
-import { Option, URI as OURI } from './Option'
-import { fromCompare, Ord } from './Ord'
-import { Pointed1 } from './Pointed'
-import { Predicate } from './Predicate'
-import * as RNEA from './ReadonlyNonEmptyArray'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import { Separated, separated } from './Separated'
-import { Show } from './Show'
-import { PipeableTraverse1, Traversable1 } from './Traversable'
-import { PipeableTraverseWithIndex1, TraversableWithIndex1 } from './TraversableWithIndex'
-import { Unfoldable1 } from './Unfoldable'
+import { Alt1 } from './Alt.ts'
+import { Alternative1 } from './Alternative.ts'
+import { Applicative as ApplicativeHKT, Applicative1 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { ChainRec1 } from './ChainRec.ts'
+import { Compactable1 } from './Compactable.ts'
+import { Either } from './Either.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { Extend1 } from './Extend.ts'
+import { Filterable1 } from './Filterable.ts'
+import { FilterableWithIndex1, PredicateWithIndex, RefinementWithIndex } from './FilterableWithIndex.ts'
+import { Foldable1 } from './Foldable.ts'
+import { FoldableWithIndex1 } from './FoldableWithIndex.ts'
+import { FromEither1, fromEitherK as fromEitherK_ } from './FromEither.ts'
+import { identity, Lazy, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor.ts'
+import { FunctorWithIndex1 } from './FunctorWithIndex.ts'
+import { HKT } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Magma } from './Magma.ts'
+import { Monad1 } from './Monad.ts'
+import { Monoid } from './Monoid.ts'
+import { NaturalTransformation11 } from './NaturalTransformation.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import * as N from './number.ts'
+import { Option, URI as OURI } from './Option.ts'
+import { fromCompare, Ord } from './Ord.ts'
+import { Pointed1 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import * as RNEA from './ReadonlyNonEmptyArray.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Separated, separated } from './Separated.ts'
+import { Show } from './Show.ts'
+import { PipeableTraverse1, Traversable1 } from './Traversable.ts'
+import { PipeableTraverseWithIndex1, TraversableWithIndex1 } from './TraversableWithIndex.ts'
+import { Unfoldable1 } from './Unfoldable.ts'
 import {
   filterE as filterE_,
   PipeableWilt1,
@@ -46,8 +46,8 @@ import {
   wiltDefault,
   Witherable1,
   witherDefault
-} from './Witherable'
-import { Zero1, guard as guard_ } from './Zero'
+} from './Witherable.ts'
+import { Zero1, guard as guard_ } from './Zero.ts'
 
 import ReadonlyNonEmptyArray = RNEA.ReadonlyNonEmptyArray
 
@@ -1828,7 +1828,7 @@ export const URI = 'ReadonlyArray'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: ReadonlyArray<A>
   }

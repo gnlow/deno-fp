@@ -1,23 +1,23 @@
 /**
  * @since 2.0.0
  */
-import { Applicative2, getApplicativeMonoid } from './Applicative'
-import { apFirst as apFirst_, Apply2, apS as apS_, apSecond as apSecond_, getApplySemigroup } from './Apply'
-import { Category2 } from './Category'
-import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain'
-import { Choice2 } from './Choice'
-import * as E from './Either'
-import { constant, flow, identity, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor'
-import * as _ from './internal'
-import { Monad2 } from './Monad'
-import { Monoid } from './Monoid'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Pointed2 } from './Pointed'
-import { Profunctor2 } from './Profunctor'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Semigroup } from './Semigroup'
-import { Strong2 } from './Strong'
+import { Applicative2, getApplicativeMonoid } from './Applicative.ts'
+import { apFirst as apFirst_, Apply2, apS as apS_, apSecond as apSecond_, getApplySemigroup } from './Apply.ts'
+import { Category2 } from './Category.ts'
+import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain.ts'
+import { Choice2 } from './Choice.ts'
+import * as E from './Either.ts'
+import { constant, flow, identity, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { Monad2 } from './Monad.ts'
+import { Monoid } from './Monoid.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Pointed2 } from './Pointed.ts'
+import { Profunctor2 } from './Profunctor.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Strong2 } from './Strong.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -227,7 +227,7 @@ export const URI = 'Reader'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: Reader<E, A>
   }

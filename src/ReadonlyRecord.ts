@@ -6,33 +6,33 @@
  *
  * @since 2.5.0
  */
-import { Applicative, Applicative1, Applicative2, Applicative2C, Applicative3, Applicative3C } from './Applicative'
-import { Compactable1 } from './Compactable'
-import { Either } from './Either'
-import { Eq, fromEquals } from './Eq'
-import { Filterable1 } from './Filterable'
-import { FilterableWithIndex1, PredicateWithIndex, RefinementWithIndex } from './FilterableWithIndex'
-import { Foldable as FoldableHKT, Foldable1, Foldable2, Foldable3 } from './Foldable'
-import { FoldableWithIndex1 } from './FoldableWithIndex'
-import { flow, identity, pipe, SK } from './function'
-import { flap as flap_, Functor1 } from './Functor'
-import { FunctorWithIndex1 } from './FunctorWithIndex'
-import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from './HKT'
-import * as _ from './internal'
-import { Magma } from './Magma'
-import { Monoid } from './Monoid'
-import { Option } from './Option'
-import { Ord } from './Ord'
-import { Predicate } from './Predicate'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import { Separated, separated } from './Separated'
-import { Show } from './Show'
-import * as S from './string'
-import { Traversable1 } from './Traversable'
-import { TraversableWithIndex1 } from './TraversableWithIndex'
-import { Unfoldable, Unfoldable1 } from './Unfoldable'
-import { PipeableWilt1, PipeableWither1, wiltDefault, Witherable1, witherDefault } from './Witherable'
+import { Applicative, Applicative1, Applicative2, Applicative2C, Applicative3, Applicative3C } from './Applicative.ts'
+import { Compactable1 } from './Compactable.ts'
+import { Either } from './Either.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { Filterable1 } from './Filterable.ts'
+import { FilterableWithIndex1, PredicateWithIndex, RefinementWithIndex } from './FilterableWithIndex.ts'
+import { Foldable as FoldableHKT, Foldable1, Foldable2, Foldable3 } from './Foldable.ts'
+import { FoldableWithIndex1 } from './FoldableWithIndex.ts'
+import { flow, identity, pipe, SK } from './function.ts'
+import { flap as flap_, Functor1 } from './Functor.ts'
+import { FunctorWithIndex1 } from './FunctorWithIndex.ts'
+import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Magma } from './Magma.ts'
+import { Monoid } from './Monoid.ts'
+import { Option } from './Option.ts'
+import { Ord } from './Ord.ts'
+import { Predicate } from './Predicate.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Separated, separated } from './Separated.ts'
+import { Show } from './Show.ts'
+import * as S from './string.ts'
+import { Traversable1 } from './Traversable.ts'
+import { TraversableWithIndex1 } from './TraversableWithIndex.ts'
+import { Unfoldable, Unfoldable1 } from './Unfoldable.ts'
+import { PipeableWilt1, PipeableWither1, wiltDefault, Witherable1, witherDefault } from './Witherable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -1717,7 +1717,7 @@ export const URI = 'ReadonlyRecord'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: ReadonlyRecord<string, A>
   }

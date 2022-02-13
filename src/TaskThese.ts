@@ -1,37 +1,37 @@
 /**
  * @since 2.4.0
  */
-import { Applicative2C } from './Applicative'
-import { Apply1, Apply2C, getApplySemigroup } from './Apply'
-import { Bifunctor2 } from './Bifunctor'
-import { Chain2C } from './Chain'
+import { Applicative2C } from './Applicative.ts'
+import { Apply1, Apply2C, getApplySemigroup } from './Apply.ts'
+import { Bifunctor2 } from './Bifunctor.ts'
+import { Chain2C } from './Chain.ts'
 import {
   FromEither2,
   fromOption as fromOption_,
   fromOptionK as fromOptionK_,
   fromPredicate as fromPredicate_
-} from './FromEither'
-import { FromIO2, fromIOK as fromIOK_ } from './FromIO'
-import { FromTask2, fromTaskK as fromTaskK_ } from './FromTask'
-import { FromThese2, fromTheseK as fromTheseK_ } from './FromThese'
-import { flow, Lazy, pipe, SK } from './function'
-import { flap as flap_, Functor2 } from './Functor'
-import { IO } from './IO'
-import { URI as IEURI } from './IOEither'
-import { Monad2C } from './Monad'
-import { MonadTask2C } from './MonadTask'
-import { NaturalTransformation22 } from './NaturalTransformation'
-import { Pointed2 } from './Pointed'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Semigroup } from './Semigroup'
-import * as T from './Task'
-import * as TH from './These'
-import * as TT from './TheseT'
-import * as _ from './internal'
+} from './FromEither.ts'
+import { FromIO2, fromIOK as fromIOK_ } from './FromIO.ts'
+import { FromTask2, fromTaskK as fromTaskK_ } from './FromTask.ts'
+import { FromThese2, fromTheseK as fromTheseK_ } from './FromThese.ts'
+import { flow, Lazy, pipe, SK } from './function.ts'
+import { flap as flap_, Functor2 } from './Functor.ts'
+import { IO } from './IO.ts'
+import { URI as IEURI } from './IOEither.ts'
+import { Monad2C } from './Monad.ts'
+import { MonadTask2C } from './MonadTask.ts'
+import { NaturalTransformation22 } from './NaturalTransformation.ts'
+import { Pointed2 } from './Pointed.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Semigroup } from './Semigroup.ts'
+import * as T from './Task.ts'
+import * as TH from './These.ts'
+import * as TT from './TheseT.ts'
+import * as _ from './internal.ts'
 
 import These = TH.These
 import Task = T.Task
-import { NonEmptyArray } from './NonEmptyArray'
+import { NonEmptyArray } from './NonEmptyArray.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -282,7 +282,7 @@ export const URI = 'TaskThese'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: TaskThese<E, A>
   }

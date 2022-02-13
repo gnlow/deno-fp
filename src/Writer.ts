@@ -1,15 +1,15 @@
 /**
  * @since 2.0.0
  */
-import { Applicative2C } from './Applicative'
-import { Apply2C } from './Apply'
-import { Chain2C } from './Chain'
-import { pipe } from './function'
-import { flap as flap_, Functor2 } from './Functor'
-import { Monad2C } from './Monad'
-import { Monoid } from './Monoid'
-import { Pointed2C } from './Pointed'
-import { Semigroup } from './Semigroup'
+import { Applicative2C } from './Applicative.ts'
+import { Apply2C } from './Apply.ts'
+import { Chain2C } from './Chain.ts'
+import { pipe } from './function.ts'
+import { flap as flap_, Functor2 } from './Functor.ts'
+import { Monad2C } from './Monad.ts'
+import { Monoid } from './Monoid.ts'
+import { Pointed2C } from './Pointed.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -118,7 +118,7 @@ export const URI = 'Writer'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: Writer<E, A>
   }

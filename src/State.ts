@@ -1,17 +1,17 @@
 /**
  * @since 2.0.0
  */
-import { Applicative2 } from './Applicative'
-import { apFirst as apFirst_, Apply2, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain'
-import { FromState2 } from './FromState'
-import { identity, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor'
-import { Monad2 } from './Monad'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Pointed2 } from './Pointed'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import * as _ from './internal'
+import { Applicative2 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply2, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain.ts'
+import { FromState2 } from './FromState.ts'
+import { identity, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor.ts'
+import { Monad2 } from './Monad.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Pointed2 } from './Pointed.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import * as _ from './internal.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -143,7 +143,7 @@ export const URI = 'State'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: State<E, A>
   }

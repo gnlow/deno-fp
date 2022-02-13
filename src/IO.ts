@@ -11,21 +11,21 @@
  *
  * @since 2.0.0
  */
-import { Applicative1, getApplicativeMonoid } from './Applicative'
-import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_, getApplySemigroup } from './Apply'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { ChainRec1 } from './ChainRec'
-import { FromIO1 } from './FromIO'
-import { constant, identity } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor'
-import * as _ from './internal'
-import { Monad1 } from './Monad'
-import { MonadIO1 } from './MonadIO'
-import { Monoid } from './Monoid'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Pointed1 } from './Pointed'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Semigroup } from './Semigroup'
+import { Applicative1, getApplicativeMonoid } from './Applicative.ts'
+import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_, getApplySemigroup } from './Apply.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { ChainRec1 } from './ChainRec.ts'
+import { FromIO1 } from './FromIO.ts'
+import { constant, identity } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { Monad1 } from './Monad.ts'
+import { MonadIO1 } from './MonadIO.ts'
+import { Monoid } from './Monoid.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Pointed1 } from './Pointed.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -115,7 +115,7 @@ export const URI = 'IO'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: IO<A>
   }

@@ -13,23 +13,23 @@
  *
  * @since 2.0.0
  */
-import { Alt2, Alt2C } from './Alt'
-import { Applicative as ApplicativeHKT, Applicative2, Applicative2C, getApplicativeMonoid } from './Applicative'
+import { Alt2, Alt2C } from './Alt.ts'
+import { Applicative as ApplicativeHKT, Applicative2, Applicative2C, getApplicativeMonoid } from './Applicative.ts'
 import {
   apFirst as apFirst_,
   Apply2,
   apS as apS_,
   apSecond as apSecond_,
   getApplySemigroup as getApplySemigroup_
-} from './Apply'
-import { Bifunctor2 } from './Bifunctor'
-import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain'
-import { ChainRec2, ChainRec2C, tailRec } from './ChainRec'
-import { Compactable2C } from './Compactable'
-import { Eq } from './Eq'
-import { Extend2 } from './Extend'
-import { Filterable2C } from './Filterable'
-import { Foldable2 } from './Foldable'
+} from './Apply.ts'
+import { Bifunctor2 } from './Bifunctor.ts'
+import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain.ts'
+import { ChainRec2, ChainRec2C, tailRec } from './ChainRec.ts'
+import { Compactable2C } from './Compactable.ts'
+import { Eq } from './Eq.ts'
+import { Extend2 } from './Extend.ts'
+import { Filterable2C } from './Filterable.ts'
+import { Foldable2 } from './Foldable.ts'
 import {
   chainOptionK as chainOptionK_,
   filterOrElse as filterOrElse_,
@@ -37,24 +37,24 @@ import {
   fromOption as fromOption_,
   fromOptionK as fromOptionK_,
   fromPredicate as fromPredicate_
-} from './FromEither'
-import { flow, identity, Lazy, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor'
-import { HKT } from './HKT'
-import * as _ from './internal'
-import { Monad2, Monad2C } from './Monad'
-import { MonadThrow2, MonadThrow2C } from './MonadThrow'
-import { Monoid } from './Monoid'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Pointed2 } from './Pointed'
-import { Predicate } from './Predicate'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import { Separated, separated } from './Separated'
-import { Show } from './Show'
-import { PipeableTraverse2, Traversable2 } from './Traversable'
-import { wiltDefault, Witherable2C, witherDefault } from './Witherable'
+} from './FromEither.ts'
+import { flow, identity, Lazy, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor.ts'
+import { HKT } from './HKT.ts'
+import * as _ from './internal.ts'
+import { Monad2, Monad2C } from './Monad.ts'
+import { MonadThrow2, MonadThrow2C } from './MonadThrow.ts'
+import { Monoid } from './Monoid.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Pointed2 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Separated, separated } from './Separated.ts'
+import { Show } from './Show.ts'
+import { PipeableTraverse2, Traversable2 } from './Traversable.ts'
+import { wiltDefault, Witherable2C, witherDefault } from './Witherable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -156,7 +156,7 @@ export const URI = 'Either'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: Either<E, A>
   }

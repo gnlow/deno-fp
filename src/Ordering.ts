@@ -1,9 +1,9 @@
 /**
  * @since 2.0.0
  */
-import * as E from './Eq'
-import * as M from './Monoid'
-import * as S from './Semigroup'
+import * as E from './Eq.ts'
+import * as M from './Monoid.ts'
+import * as S from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model

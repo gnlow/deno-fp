@@ -8,8 +8,8 @@
  *
  * @since 2.0.0
  */
-import { Alt2, Alt2C } from './Alt'
-import { Applicative2, Applicative2C, getApplicativeMonoid } from './Applicative'
+import { Alt2, Alt2C } from './Alt.ts'
+import { Applicative2, Applicative2C, getApplicativeMonoid } from './Applicative.ts'
 import {
   ap as ap_,
   apFirst as apFirst_,
@@ -18,19 +18,19 @@ import {
   apS as apS_,
   apSecond as apSecond_,
   getApplySemigroup as getApplySemigroup_
-} from './Apply'
-import { Bifunctor2 } from './Bifunctor'
-import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain'
-import { compact as compact_, Compactable2C, separate as separate_ } from './Compactable'
-import * as E from './Either'
-import * as ET from './EitherT'
+} from './Apply.ts'
+import { Bifunctor2 } from './Bifunctor.ts'
+import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain.ts'
+import { compact as compact_, Compactable2C, separate as separate_ } from './Compactable.ts'
+import * as E from './Either.ts'
+import * as ET from './EitherT.ts'
 import {
   filter as filter_,
   Filterable2C,
   filterMap as filterMap_,
   partition as partition_,
   partitionMap as partitionMap_
-} from './Filterable'
+} from './Filterable.ts'
 import {
   chainEitherK as chainEitherK_,
   chainOptionK as chainOptionK_,
@@ -40,33 +40,33 @@ import {
   fromOption as fromOption_,
   fromOptionK as fromOptionK_,
   fromPredicate as fromPredicate_
-} from './FromEither'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO2, fromIOK as fromIOK_ } from './FromIO'
+} from './FromEither.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO2, fromIOK as fromIOK_ } from './FromIO.ts'
 import {
   chainFirstTaskK as chainFirstTaskK_,
   chainTaskK as chainTaskK_,
   FromTask2,
   fromTaskK as fromTaskK_
-} from './FromTask'
-import { flow, identity, Lazy, pipe, SK } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor'
-import * as _ from './internal'
-import { IO } from './IO'
-import { IOEither, URI as IEURI } from './IOEither'
-import { Monad2, Monad2C } from './Monad'
-import { MonadIO2 } from './MonadIO'
-import { MonadTask2, MonadTask2C } from './MonadTask'
-import { MonadThrow2, MonadThrow2C } from './MonadThrow'
-import { Monoid } from './Monoid'
-import { NaturalTransformation12C, NaturalTransformation22 } from './NaturalTransformation'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Pointed2 } from './Pointed'
-import { Predicate } from './Predicate'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import * as T from './Task'
-import { TaskOption, URI as TOURI } from './TaskOption'
+} from './FromTask.ts'
+import { flow, identity, Lazy, pipe, SK } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { IO } from './IO.ts'
+import { IOEither, URI as IEURI } from './IOEither.ts'
+import { Monad2, Monad2C } from './Monad.ts'
+import { MonadIO2 } from './MonadIO.ts'
+import { MonadTask2, MonadTask2C } from './MonadTask.ts'
+import { MonadThrow2, MonadThrow2C } from './MonadThrow.ts'
+import { Monoid } from './Monoid.ts'
+import { NaturalTransformation12C, NaturalTransformation22 } from './NaturalTransformation.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Pointed2 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import * as T from './Task.ts'
+import { TaskOption, URI as TOURI } from './TaskOption.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -608,7 +608,7 @@ export const URI = 'TaskEither'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: TaskEither<E, A>
   }

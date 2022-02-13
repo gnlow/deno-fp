@@ -1,13 +1,13 @@
 /**
  * @since 2.0.0
  */
-import { Alt4 } from './Alt'
-import { Applicative4 } from './Applicative'
-import { apFirst as apFirst_, Apply4, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { Bifunctor4 } from './Bifunctor'
-import { bind as bind_, Chain4, chainFirst as chainFirst_ } from './Chain'
-import * as E from './Either'
-import { Endomorphism } from './Endomorphism'
+import { Alt4 } from './Alt.ts'
+import { Applicative4 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply4, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { Bifunctor4 } from './Bifunctor.ts'
+import { bind as bind_, Chain4, chainFirst as chainFirst_ } from './Chain.ts'
+import * as E from './Either.ts'
+import { Endomorphism } from './Endomorphism.ts'
 import {
   chainEitherK as chainEitherK_,
   chainOptionK as chainOptionK_,
@@ -17,8 +17,8 @@ import {
   fromOption as fromOption_,
   fromOptionK as fromOptionK_,
   fromPredicate as fromPredicate_
-} from './FromEither'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO4, fromIOK as fromIOK_ } from './FromIO'
+} from './FromEither.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO4, fromIOK as fromIOK_ } from './FromIO.ts'
 import {
   ask as ask_,
   asks as asks_,
@@ -26,7 +26,7 @@ import {
   chainReaderK as chainReaderK_,
   FromReader4,
   fromReaderK as fromReaderK_
-} from './FromReader'
+} from './FromReader.ts'
 import {
   chainStateK as chainStateK_,
   FromState4,
@@ -35,36 +35,36 @@ import {
   gets as gets_,
   modify as modify_,
   put as put_
-} from './FromState'
+} from './FromState.ts'
 import {
   chainFirstTaskK as chainFirstTaskK_,
   chainTaskK as chainTaskK_,
   FromTask4,
   fromTaskK as fromTaskK_
-} from './FromTask'
-import { flow, identity, Lazy, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor4 } from './Functor'
-import * as _ from './internal'
-import { IO } from './IO'
-import { IOEither, URI as IEURI } from './IOEither'
-import { Monad4 } from './Monad'
-import { MonadIO4 } from './MonadIO'
-import { MonadTask4 } from './MonadTask'
-import { MonadThrow4 } from './MonadThrow'
-import { NaturalTransformation14C, NaturalTransformation24, NaturalTransformation34 } from './NaturalTransformation'
-import { NonEmptyArray } from './NonEmptyArray'
-import { URI as OURI } from './Option'
-import { Pointed4 } from './Pointed'
-import { Predicate } from './Predicate'
-import * as R from './Reader'
-import { URI as REURI } from './ReaderEither'
-import * as RTE from './ReaderTaskEither'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Refinement } from './Refinement'
-import { State } from './State'
-import * as ST from './StateT'
-import { Task } from './Task'
-import { TaskEither, URI as TEURI } from './TaskEither'
+} from './FromTask.ts'
+import { flow, identity, Lazy, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor4 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { IO } from './IO.ts'
+import { IOEither, URI as IEURI } from './IOEither.ts'
+import { Monad4 } from './Monad.ts'
+import { MonadIO4 } from './MonadIO.ts'
+import { MonadTask4 } from './MonadTask.ts'
+import { MonadThrow4 } from './MonadThrow.ts'
+import { NaturalTransformation14C, NaturalTransformation24, NaturalTransformation34 } from './NaturalTransformation.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { URI as OURI } from './Option.ts'
+import { Pointed4 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import * as R from './Reader.ts'
+import { URI as REURI } from './ReaderEither.ts'
+import * as RTE from './ReaderTaskEither.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Refinement } from './Refinement.ts'
+import { State } from './State.ts'
+import * as ST from './StateT.ts'
+import { Task } from './Task.ts'
+import { TaskEither, URI as TEURI } from './TaskEither.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -535,7 +535,7 @@ export const URI = 'StateReaderTaskEither'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind4<S, R, E, A> {
     readonly [URI]: StateReaderTaskEither<S, R, E, A>
   }

@@ -10,28 +10,28 @@
  *
  * @since 2.0.0
  */
-import { Applicative1, getApplicativeMonoid } from './Applicative'
+import { Applicative1, getApplicativeMonoid } from './Applicative.ts'
 import {
   apFirst as apFirst_,
   Apply1,
   apS as apS_,
   apSecond as apSecond_,
   getApplySemigroup as getApplySemigroup_
-} from './Apply'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO1, fromIOK as fromIOK_ } from './FromIO'
-import { FromTask1 } from './FromTask'
-import { identity, pipe } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor'
-import * as _ from './internal'
-import { Monad1 } from './Monad'
-import { MonadIO1 } from './MonadIO'
-import { MonadTask1 } from './MonadTask'
-import { Monoid } from './Monoid'
-import { NonEmptyArray } from './NonEmptyArray'
-import { Pointed1 } from './Pointed'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Semigroup } from './Semigroup'
+} from './Apply.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO1, fromIOK as fromIOK_ } from './FromIO.ts'
+import { FromTask1 } from './FromTask.ts'
+import { identity, pipe } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1 } from './Functor.ts'
+import * as _ from './internal.ts'
+import { Monad1 } from './Monad.ts'
+import { MonadIO1 } from './MonadIO.ts'
+import { MonadTask1 } from './MonadTask.ts'
+import { Monoid } from './Monoid.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import { Pointed1 } from './Pointed.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Semigroup } from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -175,7 +175,7 @@ export const URI = 'Task'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Task<A>
   }

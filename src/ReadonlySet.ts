@@ -1,18 +1,18 @@
 /**
  * @since 2.5.0
  */
-import { Either } from './Either'
-import { Eq, fromEquals } from './Eq'
-import { identity } from './function'
-import { Magma } from './Magma'
-import { Monoid } from './Monoid'
-import { Option } from './Option'
-import { Ord } from './Ord'
-import { not, Predicate } from './Predicate'
-import { Refinement } from './Refinement'
-import { Semigroup } from './Semigroup'
-import { Separated, separated } from './Separated'
-import { Show } from './Show'
+import { Either } from './Either.ts'
+import { Eq, fromEquals } from './Eq.ts'
+import { identity } from './function.ts'
+import { Magma } from './Magma.ts'
+import { Monoid } from './Monoid.ts'
+import { Option } from './Option.ts'
+import { Ord } from './Ord.ts'
+import { not, Predicate } from './Predicate.ts'
+import { Refinement } from './Refinement.ts'
+import { Semigroup } from './Semigroup.ts'
+import { Separated, separated } from './Separated.ts'
+import { Show } from './Show.ts'
 
 // -------------------------------------------------------------------------------------
 // interop
@@ -551,7 +551,7 @@ export const URI = 'ReadonlySet'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare module './HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: ReadonlySet<A>
   }

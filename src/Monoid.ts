@@ -32,12 +32,12 @@
  *
  * @since 2.0.0
  */
-import { Bounded } from './Bounded'
-import { getMonoid as getFM } from './function'
-import { Endomorphism, getMonoid as getEM } from './Endomorphism'
-import * as _ from './internal'
-import { ReadonlyRecord } from './ReadonlyRecord'
-import * as Se from './Semigroup'
+import { Bounded } from './Bounded.ts'
+import { getMonoid as getFM } from './function.ts'
+import { Endomorphism, getMonoid as getEM } from './Endomorphism.ts'
+import * as _ from './internal.ts'
+import { ReadonlyRecord } from './ReadonlyRecord.ts'
+import * as Se from './Semigroup.ts'
 
 // -------------------------------------------------------------------------------------
 // model
