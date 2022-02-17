@@ -4,10 +4,10 @@
  * @since 0.7.0
  */
 
-import * as IO from "fp-ts/IO"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { Predicate } from "fp-ts/Predicate"
-import { when as _when, unless as _unless } from "./Applicative"
+import * as IO from "../IO.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { Predicate } from "../Predicate.ts"
+import { when as _when, unless as _unless } from "./Applicative.ts"
 
 type IO<A> = IO.IO<A>
 

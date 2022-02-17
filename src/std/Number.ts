@@ -4,11 +4,11 @@
  * @since 0.1.0
  */
 
-import { flow, pipe } from "fp-ts/function"
-import { Predicate, not } from "fp-ts/Predicate"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { Option, fromPredicate } from "fp-ts/Option"
-import { unless } from "./Function"
+import { flow, pipe } from "../function.ts"
+import { Predicate, not } from "../Predicate.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { Option, fromPredicate } from "../Option.ts"
+import { unless } from "./Function.ts"
 
 /**
  * Check if a number is actually valid. Specifically, all this function is

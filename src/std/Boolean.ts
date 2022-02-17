@@ -5,9 +5,9 @@
  * @since 0.1.0
  */
 
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { SemigroupAll, SemigroupAny } from "fp-ts/boolean"
-import { curry2 } from "./Function"
+import { Endomorphism } from "../Endomorphism.ts"
+import { SemigroupAll, SemigroupAny } from "../boolean.ts"
+import { curry2 } from "./Function.ts"
 
 /**
  * Invert a boolean.

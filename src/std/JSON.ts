@@ -4,14 +4,14 @@
  * @since 0.1.0
  */
 
-import { Newtype, iso } from "newtype-ts"
-import { Either } from "fp-ts/Either"
-import * as E from "fp-ts/Either"
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { Json } from "fp-ts/Json"
-import { flow, identity, pipe } from "fp-ts/function"
-import { isString } from "fp-ts/string"
+import { Newtype, iso } from "newtype-ts.ts"
+import { Either } from "../Either.ts"
+import * as E from "../Either.ts"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { Json } from "../Json.ts"
+import { flow, identity, pipe } from "../function.ts"
+import { isString } from "../string.ts"
 
 /**
  * Newtype representing stringified JSON.

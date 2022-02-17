@@ -5,13 +5,13 @@
  * @since 0.9.0
  */
 
-import { pipe, flow } from "fp-ts/function"
-import { not } from "fp-ts/Predicate"
-import * as IO from "fp-ts/IO"
+import { pipe, flow } from "../function.ts"
+import { not } from "../Predicate.ts"
+import * as IO from "../IO.ts"
 type IO<A> = IO.IO<A>
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import * as S from "fp-ts/string"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import * as S from "../string.ts"
 
 /**
  * Attempt to get an environment parameter.

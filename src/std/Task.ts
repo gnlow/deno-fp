@@ -4,12 +4,12 @@
  * @since 0.1.0
  */
 
-import * as T from "fp-ts/Task"
+import * as T from "../Task.ts"
 type Task<A> = T.Task<A>
-import { IO } from "fp-ts/IO"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { fieldMilliseconds, Milliseconds, now, unMilliseconds } from "./Date"
-import { when as _when, unless as _unless } from "./Applicative"
+import { IO } from "../IO.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { fieldMilliseconds, Milliseconds, now, unMilliseconds } from "./Date.ts"
+import { when as _when, unless as _unless } from "./Applicative.ts"
 
 /**
  * Wait for the specified number of milliseconds before resolving.

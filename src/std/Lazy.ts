@@ -11,23 +11,23 @@
 
 // All the typeclass stuff was copied from fp-ts/IO almost identically.
 
-import { Lazy, constant, identity } from "fp-ts/function"
-import { Functor1, flap as flap_, bindTo as bindTo_ } from "fp-ts/Functor"
-import { Applicative1 } from "fp-ts/Applicative"
-import { Monad1 } from "fp-ts/Monad"
-import { Pointed1 } from "fp-ts/Pointed"
+import { Lazy, constant, identity } from "../function.ts"
+import { Functor1, flap as flap_, bindTo as bindTo_ } from "../Functor.ts"
+import { Applicative1 } from "../Applicative.ts"
+import { Monad1 } from "../Monad.ts"
+import { Pointed1 } from "../Pointed.ts"
 import {
   Apply1,
   apFirst as apFirst_,
   apS as apS_,
   apSecond as apSecond_,
-} from "fp-ts/Apply"
-import { Chain1, bind as bind_, chainFirst as chainFirst_ } from "fp-ts/Chain"
-import { ChainRec1 } from "fp-ts/ChainRec"
-import { ReadonlyNonEmptyArray } from "fp-ts/ReadonlyNonEmptyArray"
-import * as RNEA from "fp-ts/ReadonlyNonEmptyArray"
-import { NonEmptyArray } from "fp-ts/NonEmptyArray"
-import * as RA from "fp-ts/ReadonlyArray"
+} from "../Apply.ts"
+import { Chain1, bind as bind_, chainFirst as chainFirst_ } from "../Chain.ts"
+import { ChainRec1 } from "../ChainRec.ts"
+import { ReadonlyNonEmptyArray } from "../ReadonlyNonEmptyArray.ts"
+import * as RNEA from "../ReadonlyNonEmptyArray.ts"
+import { NonEmptyArray } from "../NonEmptyArray.ts"
+import * as RA from "../ReadonlyArray.ts"
 
 export {
   /**
@@ -36,7 +36,7 @@ export {
    * @since 0.12.0
    */
   Lazy,
-} from "fp-ts/function"
+} from "../function.ts"
 
 /**
  * Typeclass machinery.
@@ -52,7 +52,7 @@ export const URI = "Lazy"
  */
 export type URI = typeof URI
 
-declare module "fp-ts/HKT" {
+declare module "../HKT.ts" {
   interface URItoKind<A> {
     readonly [URI]: Lazy<A>
   }

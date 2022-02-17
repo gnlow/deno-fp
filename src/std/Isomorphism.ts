@@ -9,10 +9,10 @@
  * @since 0.13.0
  */
 
-import { Iso } from "monocle-ts/Iso"
-import { Semigroup } from "fp-ts/Semigroup"
-import { Monoid } from "fp-ts/Monoid"
-import { flow } from "fp-ts/lib/function"
+import { Iso } from "monocle-ts/Iso.ts"
+import { Semigroup } from "../Semigroup.ts"
+import { Monoid } from "../Monoid.ts"
+import { flow } from "../lib/function.ts"
 
 /**
  * An isomorphism is formed between two reversible, lossless functions. The

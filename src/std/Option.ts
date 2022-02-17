@@ -4,15 +4,15 @@
  * @since 0.1.0
  */
 
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { Eq } from "fp-ts/Eq"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { constant, flow } from "fp-ts/function"
-import * as B from "fp-ts/boolean"
-import { invert as invertBool } from "./Boolean"
-import { pureIf as _pureIf } from "./Alternative"
-import { toMonoid as _toMonoid } from "./Monoid"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { Eq } from "../Eq.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { constant, flow } from "../function.ts"
+import * as B from "../boolean.ts"
+import { invert as invertBool } from "./Boolean.ts"
+import { pureIf as _pureIf } from "./Alternative.ts"
+import { toMonoid as _toMonoid } from "./Monoid.ts"
 
 /**
  * Unwrap the value from within an `Option`, throwing if `None`.

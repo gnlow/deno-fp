@@ -4,8 +4,8 @@
  * @since 0.1.0
  */
 
-import { Either } from "fp-ts/Either"
-import * as E from "fp-ts/Either"
+import { Either } from "../Either.ts"
+import * as E from "../Either.ts"
 
 /**
  * Unwrap the value from within an `Either`, throwing the inner value of `Left`

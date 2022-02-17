@@ -5,11 +5,11 @@
  * @since 0.2.0
  */
 
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { flow, pipe } from "fp-ts/function"
-import { Refinement } from "fp-ts/Refinement"
-import { construct, invoke, is } from "./Function"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { flow, pipe } from "../function.ts"
+import { Refinement } from "../Refinement.ts"
+import { construct, invoke, is } from "./Function.ts"
 
 /**
  * An empty `URLSearchParams`.

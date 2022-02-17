@@ -4,14 +4,14 @@
  *
  * @since 0.10.0
  */
-import { flow } from "fp-ts/function"
-import { Predicate, not } from "fp-ts/Predicate"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { Option } from "fp-ts/Option"
-import * as RR from "fp-ts/ReadonlyRecord"
-import * as RA from "fp-ts/ReadonlyArray"
-import * as RT from "fp-ts/ReadonlyTuple"
-import { last } from "fp-ts/Semigroup"
+import { flow } from "../function.ts"
+import { Predicate, not } from "../Predicate.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { Option } from "../Option.ts"
+import * as RR from "../ReadonlyRecord.ts"
+import * as RA from "../ReadonlyArray.ts"
+import * as RT from "../ReadonlyTuple.ts"
+import { last } from "../Semigroup.ts"
 
 /**
  * Get the values from a `Record`.

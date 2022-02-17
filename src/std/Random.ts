@@ -4,15 +4,15 @@
  * @since 0.12.0
  */
 
-import * as IO from "fp-ts/IO"
+import * as IO from "../IO.ts"
 type IO<A> = IO.IO<A>
-import { flow, pipe } from "fp-ts/function"
-import { NonEmptyArray } from "fp-ts/NonEmptyArray"
-import * as RA from "fp-ts/ReadonlyArray"
-import { extractAt } from "./Array"
-import * as Rand from "fp-ts/Random"
-import { decrement } from "./Number"
-import { unsafeUnwrap } from "./Option"
+import { flow, pipe } from "../function.ts"
+import { NonEmptyArray } from "../NonEmptyArray.ts"
+import * as RA from "../ReadonlyArray.ts"
+import { extractAt } from "./Array.ts"
+import * as Rand from "../Random.ts"
+import { decrement } from "./Number.ts"
+import { unsafeUnwrap } from "./Option.ts"
 
 /**
  * Like `fp-ts/Array::randomElem`, but returns the remainder of the array as

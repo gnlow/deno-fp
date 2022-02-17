@@ -4,14 +4,14 @@
  * @since 0.1.0
  */
 
-import { flow } from "fp-ts/function"
-import { Predicate, not } from "fp-ts/Predicate"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { Option } from "fp-ts/Option"
-import * as R from "fp-ts/Record"
-import * as A from "fp-ts/Array"
-import * as T from "fp-ts/Tuple"
-import { last } from "fp-ts/Semigroup"
+import { flow } from "../function.ts"
+import { Predicate, not } from "../Predicate.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { Option } from "../Option.ts"
+import * as R from "../Record.ts"
+import * as A from "../Array.ts"
+import * as T from "../Tuple.ts"
+import { last } from "../Semigroup.ts"
 
 /**
  * Get the values from a `Record`.

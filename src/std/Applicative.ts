@@ -14,7 +14,7 @@ import {
   URIS2,
   URIS3,
   URIS4,
-} from "fp-ts/HKT"
+} from "../HKT.ts"
 import {
   Applicative,
   Applicative1,
@@ -23,7 +23,7 @@ import {
   Applicative3,
   Applicative3C,
   Applicative4,
-} from "fp-ts/Applicative"
+} from "../Applicative.ts"
 
 /**
  * Conditional execution of an applicative. Helpful for conditional side effects

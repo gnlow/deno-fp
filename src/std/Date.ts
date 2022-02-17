@@ -4,18 +4,18 @@
  * @since 0.1.0
  */
 
-import { Newtype, iso, getField, getOrd } from "newtype-ts"
-import { flow, pipe } from "fp-ts/function"
-import { Refinement } from "fp-ts/Refinement"
-import { Predicate } from "fp-ts/Predicate"
-import { isValid as isValidNum } from "./Number"
-import { Field as fieldNumber, Ord as ordNumber } from "fp-ts/number"
-import { now as nownum } from "fp-ts/Date"
-import * as IO from "fp-ts/IO"
+import { Newtype, iso, getField, getOrd } from "newtype-ts.ts"
+import { flow, pipe } from "../function.ts"
+import { Refinement } from "../Refinement.ts"
+import { Predicate } from "../Predicate.ts"
+import { isValid as isValidNum } from "./Number.ts"
+import { Field as fieldNumber, Ord as ordNumber } from "../number.ts"
+import { now as nownum } from "../Date.ts"
+import * as IO from "../IO.ts"
 type IO<A> = IO.IO<A>
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { construct, invokeOn, is } from "./Function"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { construct, invokeOn, is } from "./Function.ts"
 
 /**
  * Parse a date, leaving open the risk of a failure to parse resulting in an

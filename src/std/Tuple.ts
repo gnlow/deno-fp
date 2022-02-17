@@ -14,7 +14,7 @@ import {
   URIS2,
   URIS3,
   URIS4,
-} from "fp-ts/HKT"
+} from "../HKT.ts"
 import {
   Functor,
   Functor1,
@@ -22,9 +22,9 @@ import {
   Functor3,
   Functor4,
   Functor2C,
-} from "fp-ts/Functor"
-import { fork } from "./Function"
-import { identity } from "fp-ts/function"
+} from "../Functor.ts"
+import { fork } from "./Function.ts"
+import { identity } from "../function.ts"
 
 /**
  * Duplicate a value into a tuple.

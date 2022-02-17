@@ -5,11 +5,11 @@
  * @since 0.12.0
  */
 
-import { Predicate } from "fp-ts/Predicate"
-import * as Pred from "fp-ts/Predicate"
-import { flow } from "fp-ts/function"
-import { invert } from "./Boolean"
-import { concatAll } from "fp-ts/Monoid"
+import { Predicate } from "../Predicate.ts"
+import * as Pred from "../Predicate.ts"
+import { flow } from "../function.ts"
+import { invert } from "./Boolean.ts"
+import { concatAll } from "../Monoid.ts"
 
 /**
  * Given an array of predicates, returns a predicate that returns true if the

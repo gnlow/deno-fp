@@ -4,9 +4,9 @@
  * @since 0.12.0
  */
 
-import { Show } from "fp-ts/Show"
-import { flow, pipe } from "fp-ts/function"
-import { Contravariant1 } from "fp-ts/Contravariant"
+import { Show } from "../Show.ts"
+import { flow, pipe } from "../function.ts"
+import { Contravariant1 } from "../Contravariant.ts"
 
 /**
  * Typeclass machinery.
@@ -22,7 +22,7 @@ export const URI = "Show"
  */
 export type URI = typeof URI
 
-declare module "fp-ts/HKT" {
+declare module "../HKT.ts" {
   interface URItoKind<A> {
     readonly [URI]: Show<A>
   }

@@ -4,27 +4,27 @@
  * @since 0.10.0
  */
 
-import { constant, pipe, flow } from "fp-ts/function"
-import { Predicate, not } from "fp-ts/Predicate"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { Eq } from "fp-ts/Eq"
-import { Ord } from "fp-ts/Ord"
-import { match as orderingMatch } from "fp-ts/Ordering"
-import { Ord as ordNumber, MonoidProduct, MonoidSum } from "fp-ts/number"
-import { ReadonlyNonEmptyArray } from "fp-ts/ReadonlyNonEmptyArray"
-import * as NEA from "fp-ts/ReadonlyNonEmptyArray"
-import { copy } from "fp-ts/Array"
-import * as RA from "fp-ts/ReadonlyArray"
-import * as R from "fp-ts/ReadonlyRecord"
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import * as B from "fp-ts/boolean"
-import { reduceM } from "fp-ts/Foldable"
-import { concatAll } from "fp-ts/Monoid"
-import { max, min } from "fp-ts/Semigroup"
-import { flip, invoke } from "./Function"
-import { These } from "fp-ts/These"
-import * as T from "fp-ts/These"
+import { constant, pipe, flow } from "../function.ts"
+import { Predicate, not } from "../Predicate.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { Eq } from "../Eq.ts"
+import { Ord } from "../Ord.ts"
+import { match as orderingMatch } from "../Ordering.ts"
+import { Ord as ordNumber, MonoidProduct, MonoidSum } from "../number.ts"
+import { ReadonlyNonEmptyArray } from "../ReadonlyNonEmptyArray.ts"
+import * as NEA from "../ReadonlyNonEmptyArray.ts"
+import { copy } from "../Array.ts"
+import * as RA from "../ReadonlyArray.ts"
+import * as R from "../ReadonlyRecord.ts"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import * as B from "../boolean.ts"
+import { reduceM } from "../Foldable.ts"
+import { concatAll } from "../Monoid.ts"
+import { max, min } from "../Semigroup.ts"
+import { flip, invoke } from "./Function.ts"
+import { These } from "../These.ts"
+import * as T from "../These.ts"
 import {
   HKT,
   Kind,
@@ -35,7 +35,7 @@ import {
   URIS2,
   URIS3,
   URIS4,
-} from "fp-ts/HKT"
+} from "../HKT.ts"
 import {
   Applicative,
   Applicative1,
@@ -43,7 +43,7 @@ import {
   Applicative3,
   Applicative4,
   Applicative2C,
-} from "fp-ts/Applicative"
+} from "../Applicative.ts"
 
 /**
  * Like `fp-ts/ReadonlyArray::elem` but flipped, which the "V" suffix denotes.
@@ -815,9 +815,9 @@ export const zipAll =
  * and therefore `Task`-based, for example.
  *
  * @example
- * import * as T from "fp-ts/Task";
- * import { Task } from "fp-ts/Task";
- * import { filterA } from "fp-ts-std/ReadonlyArray";
+ * import * as T from "../Task.ts";
+ * import { Task } from "../Task.ts";
+ * import { filterA } from "..-std/ReadonlyArray.ts";
  *
  * const asyncIsEven = (n: number): Task<boolean> => T.of(n % 2 === 0);
  *

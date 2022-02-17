@@ -12,7 +12,7 @@ import {
   Foldable3,
   Foldable3C,
   Foldable4,
-} from "fp-ts/Foldable"
+} from "../Foldable.ts"
 import {
   HKT,
   Kind,
@@ -23,11 +23,11 @@ import {
   URIS2,
   URIS3,
   URIS4,
-} from "fp-ts/HKT"
-import { Monoid } from "fp-ts/Monoid"
-import { flow, identity } from "fp-ts/function"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { invert } from "./Boolean"
+} from "../HKT.ts"
+import { Monoid } from "../Monoid.ts"
+import { flow, identity } from "../function.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { invert } from "./Boolean.ts"
 
 /**
  * Extracts the value from within a foldable, falling back to the monoidal

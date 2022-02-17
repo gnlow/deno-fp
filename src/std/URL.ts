@@ -4,13 +4,13 @@
  * @since 0.1.0
  */
 
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { Either } from "fp-ts/Either"
-import * as E from "fp-ts/Either"
-import { flow, identity, pipe } from "fp-ts/function"
-import { Refinement } from "fp-ts/Refinement"
-import { construct, is } from "./Function"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { Either } from "../Either.ts"
+import * as E from "../Either.ts"
+import { flow, identity, pipe } from "../function.ts"
+import { Refinement } from "../Refinement.ts"
+import { construct, is } from "./Function.ts"
 
 /**
  * Unsafely parse a `URL`, throwing on failure.

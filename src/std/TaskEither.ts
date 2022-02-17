@@ -4,14 +4,14 @@
  * @since 0.12.0
  */
 
-import { TaskEither } from "fp-ts/TaskEither"
-import * as T from "fp-ts/Task"
-import { execute as executeT } from "./Task"
+import { TaskEither } from "../TaskEither.ts"
+import * as T from "../Task.ts"
+import { execute as executeT } from "./Task.ts"
 import {
   unsafeUnwrap as unsafeUnwrapE,
   unsafeUnwrapLeft as unsafeUnwrapLeftE,
-} from "./Either"
-import { flow } from "fp-ts/function"
+} from "./Either.ts"
+import { flow } from "../function.ts"
 
 /**
  * Unwrap the promise from within a `TaskEither`, rejecting with the inner

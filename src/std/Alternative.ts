@@ -14,7 +14,7 @@ import {
   URIS2,
   URIS3,
   URIS4,
-} from "fp-ts/HKT"
+} from "../HKT.ts"
 import {
   Alternative,
   Alternative1,
@@ -23,7 +23,7 @@ import {
   Alternative3,
   Alternative3C,
   Alternative4,
-} from "fp-ts/Alternative"
+} from "../Alternative.ts"
 
 /**
  * Conditionally lifts a value to an `Alternative` context or returns

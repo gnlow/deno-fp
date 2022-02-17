@@ -7,22 +7,22 @@
  * @since 0.1.0
  */
 
-import * as O from "fp-ts/Option"
-import * as M from "fp-ts/Map"
-import * as A from "fp-ts/Array"
+import * as O from "../Option.ts"
+import * as M from "../Map.ts"
+import * as A from "../Array.ts"
 import {
   flow,
   pipe,
   getMonoid as getFunctionMonoid,
   apply,
   constant,
-} from "fp-ts/function"
-import { Predicate, not } from "fp-ts/Predicate"
-import { Endomorphism, getMonoid as getEndoMonoid } from "fp-ts/Endomorphism"
-import { concatAll } from "fp-ts/Monoid"
-import { first } from "fp-ts/Semigroup"
-import { Eq } from "fp-ts/Eq"
-import { Refinement } from "fp-ts/Refinement"
+} from "../function.ts"
+import { Predicate, not } from "../Predicate.ts"
+import { Endomorphism, getMonoid as getEndoMonoid } from "../Endomorphism.ts"
+import { concatAll } from "../Monoid.ts"
+import { first } from "../Semigroup.ts"
+import { Eq } from "../Eq.ts"
+import { Refinement } from "../Refinement.ts"
 
 /**
  * Flip the function/argument order of a curried function.

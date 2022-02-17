@@ -4,23 +4,23 @@
  * @since 0.1.0
  */
 
-import { pipe, flow } from "fp-ts/function"
-import { Predicate, and, not } from "fp-ts/Predicate"
-import { Endomorphism } from "fp-ts/Endomorphism"
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { NonEmptyArray } from "fp-ts/NonEmptyArray"
-import * as NEA from "fp-ts/NonEmptyArray"
-import * as RA from "fp-ts/ReadonlyArray"
-import * as S from "fp-ts/string"
+import { pipe, flow } from "../function.ts"
+import { Predicate, and, not } from "../Predicate.ts"
+import { Endomorphism } from "../Endomorphism.ts"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { NonEmptyArray } from "../NonEmptyArray.ts"
+import * as NEA from "../NonEmptyArray.ts"
+import * as RA from "../ReadonlyArray.ts"
+import * as S from "../string.ts"
 import {
   join,
   dropRightWhile as dropRightWhileRA,
   takeRightWhile as takeRightWhileRA,
-} from "./ReadonlyArray"
-import { max } from "fp-ts/Ord"
-import { Ord as ordNumber } from "fp-ts/number"
-import { flip, invoke, when } from "./Function"
+} from "./ReadonlyArray.ts"
+import { max } from "../Ord.ts"
+import { Ord as ordNumber } from "../number.ts"
+import { flip, invoke, when } from "./Function.ts"
 
 /**
  * Convert a number to a string.

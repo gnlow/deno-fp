@@ -7,14 +7,14 @@
  * @since 0.12.0
  */
 
-import * as IO from "fp-ts/IO"
+import * as IO from "../IO.ts"
 type IO<A> = IO.IO<A>
-import { Option } from "fp-ts/Option"
-import * as O from "fp-ts/Option"
-import { NonEmptyArray } from "fp-ts/NonEmptyArray"
-import * as NEA from "fp-ts/NonEmptyArray"
-import { flow, pipe } from "fp-ts/function"
-import { invoke } from "./Function"
+import { Option } from "../Option.ts"
+import * as O from "../Option.ts"
+import { NonEmptyArray } from "../NonEmptyArray.ts"
+import * as NEA from "../NonEmptyArray.ts"
+import { flow, pipe } from "../function.ts"
+import { invoke } from "./Function.ts"
 
 /**
  * Convert a `NodeList` into an `Array`.
