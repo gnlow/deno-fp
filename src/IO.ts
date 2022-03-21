@@ -26,6 +26,7 @@ import { NonEmptyArray } from './NonEmptyArray.ts'
 import { Pointed1 } from './Pointed.ts'
 import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
 import { Semigroup } from './Semigroup.ts'
+import {} from './HKT.ts'
 
 // -------------------------------------------------------------------------------------
 // model
